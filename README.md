@@ -1,4 +1,4 @@
-#V-catchment simulation with SHUD mdoel
+# V-catchment simulation with SHUD mdoel
 
 ***SHUD - Solver of Hydrological Unstructured Domain.*** 
 
