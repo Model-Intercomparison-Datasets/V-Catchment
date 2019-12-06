@@ -11,7 +11,7 @@ Author: Lele Shu [www.shulele.net](www.shulele.net)
 The V-Catchment (VC) experiment is a standard test case for numerical hydrological models to validate their performance for overland flow along a hillslope and in the presence of a river channel.
 The VC domain consists of two inclined planes draining into a sloping channel. 
 
-![vcat](Ref/vcat.png)
+![vcat](Ref/Vcat.png)
 
 Both hillslopes are $800 \times 1000 m$ with Manning's roughness $n=0.015$.  The river channel between the hillslopes is $20$ m wide and $1000$ m in length with $n=0.15$. The slope from the ridge to the river channel is 0.05 (in the $x$ direction), and the longitudinal slope (in the $y​$ direction) is 0.02.
 
