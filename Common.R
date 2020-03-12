@@ -22,7 +22,7 @@ Rough.river = 0.15 / 86400
 
 a.max = 1e6 * .005;
 q.min = 33;
-nriv=20
+nriv=100
 riv.start = 9/10 *0.
 
 AA = (lx*2+lx2)*1000

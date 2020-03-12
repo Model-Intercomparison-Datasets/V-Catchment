@@ -40,7 +40,7 @@ dev.off()
 wb.simp = wb.s2
 riv.simp = riv.s2
 
-tri = m.DomainDecomposition(wb=wb.simp,q=q.min, a=a.max)
+tri = shud.triangle(wb=wb.simp,q=q.min, a=a.max)
 if(iplot){
   plot(tri, asp=1, type='n')
 }
@@ -56,7 +56,7 @@ writeshape(spm, crs(wbd), file=file.path(inpath, 'gis', 'domain'))
 pa=shud.att(tri )
 # forc.fns = paste0(sp.forc@data[, 'NLDAS_ID'], '.csv')
 # forc.fns
-writeforc(forc.fns, path=workdir,
+write.forc(forc.fns, path=workdir,
           file=fin['md.forc'])
 
 # generate PIHM .riv
@@ -108,10 +108,10 @@ if(nrow(cxy)<100){
   text(cxy, paste(round(zz) ) )
 }
 # model configuration, parameter
-cfg.para = pihmpara()
+cfg.para = shud.para()
 
 # calibration
-cfg.calib = pihmcalib()
+cfg.calib = shud.calib()
 
 #soil/geol/landcover
 lc = 42
@@ -146,9 +146,9 @@ mf = MeltFactor(years = years)
 write.tsd(mf, file=fin['md.mf'], backup = backup)
 
 # write PIHM input files.
-writemesh(backup=backup, pm, file = fin['md.mesh'])
-writeriv(backup=backup, pr, file=fin['md.riv'])
-writeinit(backup=backup, pic, file=fin['md.ic'])
+write.mesh(backup=backup, pm, file = fin['md.mesh'])
+write.riv(backup=backup, pr, file=fin['md.riv'])
+write.ic(backup=backup, pic, file=fin['md.ic'])
 
 write.df(backup=backup, pa, file=fin['md.att'])
 write.df(backup=backup, prs, file=fin['md.rivseg'])

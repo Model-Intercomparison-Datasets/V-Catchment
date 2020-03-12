@@ -1,5 +1,5 @@
 # setwd("/Users/leleshu/Dropbox/workspace/Xcode/PIHM++/Build/Products/Debug")
-clib=c('rgdal', 'rgeos', 'raster', 'sp', 'PIHMgisR','xts', 'ggplot2', 'sfsmisc')
+clib=c('rgdal', 'rgeos', 'raster', 'sp','xts', 'ggplot2', 'sfsmisc')
 x=lapply(clib, library, character.only=T)
 rm(list=ls()); library(SHUDtoolbox)
 source('Common.R')
