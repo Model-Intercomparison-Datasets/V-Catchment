@@ -53,5 +53,5 @@ The R scripts include:
 
 ## Policy
 
-The script and data are open access for any purposes. I would be most grateful if you could send me an email (at lele.shu@gmail.com) when they helps you.
+The script and data are open access for any purposes. I would be most grateful if you could send me an email (at lele.shu@gmail.com) when they help you.
 
